@@ -1,0 +1,742 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.navbar{
+    width: 100%;
+    padding: 20px 100px;
+    height: auto;
+    background-color: #191919;
+}
+.navbar .navbar1{
+    height: 8vh;
+    border-bottom: 2px solid #323232;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .navbar1 .logo{
+    color: white;
+    font-size: 25px;
+}
+.navbar .navbar1 ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navbar .navbar1 ul li{
+    list-style: none;
+}
+.navbar .navbar1 ul li a{
+    text-decoration: none;
+    color: #b5b5b5;
+    margin: 0px 10px;
+    font-size: 13px;
+}
+.navbar .navbar1 i{
+    color: #b5b5b5;
+    font-size: 15px;
+}
+.navbar .navbar2{
+    display: none;
+}
+.navbar .navbar3{
+    display: none;
+}
+.ban{
+    padding: 20px 100px;
+    height: auto;
+    background-color: #191919;
+}
+.ban .top{
+    margin: 100px 0px;
+    height: auto;
+    display: flex;
+    background-color: #191919;
+}
+.ban .top .lft{
+    color: white;
+    width: 40%;
+}
+.ban .top .lft .nw{
+    letter-spacing: 5px;
+}
+.ban .top .lft p{
+    color: #818181;
+    margin: 30px 0px;
+    font-size: 15px;
+}
+.ban .top .lft h1{
+    font-size: 60px;
+}
+.ban .top .lft button{
+    font-size: 10px;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    background-color: #da7c48;
+}
+.ban .top .rgt{
+    width: 60%;
+}
+.ban .top .rgt img{
+    height: 80%;
+    width: 60%;
+    margin-top: 30px;
+    margin-left: 150px;
+}
+.but{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 20px 100px;
+}
+.but .nxt{
+    margin-top: 200px;
+    height: auto;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px
+}
+.but .nxt .icon{
+    background-color: #f1f1f1;
+    height: 40vh;
+    text-align: center;
+}
+.but .nxt .icon img{
+    height: 250px;
+    position: relative;
+    top: -130px;
+}
+/* .but .nxt .icon .rat{
+    top: -90px;
+} */
+.but .nxt .icon h3{
+    font-size: 17px;
+    position: relative;
+    top: -130px;
+}
+.but .nxt .icon span{
+    color: gray;
+    font-size: 10px;
+    position: relative;
+    top: -110px;
+}
+.but .nxt .icon span i{
+    color: #b59a91;
+}
+.but .orange{
+    background-color: #d87c49;
+    height: 80vh;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.but .orange .spk img{
+    margin-top: 50px;
+    height: 600px;
+}
+.but .orange .ig h1{
+    margin-top: 180px;
+}
+.but .orange .ig p{
+    color: #f1b68e;
+    font-size: 13px;
+    margin-top: 20px;
+}
+.but .orange .ig button{
+    padding: 15px 25px;
+    background-color: #191919;
+    color: white;
+    font-size: 10px;
+    margin-top: 20px;
+}
+.but .gray{
+    margin: 30px 0px;
+    height: 60vh;
+    background-color: #e8e8e8;
+    background-image: url(../IMAGES/image-speaker-zx7-removebg-preview-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.but .gray h1{
+    position: relative;
+    top: 150px;
+    left: 100px;
+}
+.but .gray button{
+    padding: 15px 25px;
+    background-color: transparent;
+    position: relative;
+    top: 170px;
+    left: 100px;
+}
+.but .earphones{
+    margin: 10px 0px;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+}
+.but .earphones .pic{
+    background-image: url(../IMAGES/yx1-wireless-earphones-gallery-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.but .earphones .label{
+    background-color: #f1f1f1;
+}
+.but .earphones .label h1{
+    /* position: relative; */
+    top: 150px;
+    left: 100px;
+}
+.but .earphones .label button{
+    padding: 15px 25px;
+    background-color: transparent;
+    position: relative;
+    top: 170px;
+    left: 100px;
+}
+.but .profile{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.but .profile .essay{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 150px;
+}
+.but .profile .essay h1{
+    font-size: 35px;
+}
+.but .profile .essay p{
+    font-size: 15px;
+    margin-top: 30px;
+}
+.but .profile .essay h1 span{
+    color: #cb8f69;
+}
+.but .profile .person{
+    background-image: url(../IMAGES/The-10-best-audiophile-bars-around-the-world.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+}
+.end {
+    margin-top: 50px;
+    background-color: #101010;
+    color: white
+}
+.end .end1{
+    height: auto;
+    padding: 20px 100px;
+}
+.end .end2{
+    display: none;
+}
+.end .end3{
+    display: none;
+}
+.end .end1 .bar{
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.end .end1 .bar .logo{
+    color: white;
+    font-size: 25px;
+}
+.end .end1 .bar ul{
+    display: flex;
+}
+.end .end1 .bar ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+.end .end1 .bar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+.end .end1 .last{
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.end .end1 .last .lft{
+    width: 50%;
+    padding-right: 30px;
+}
+.end .end1 .last .lft p{
+    font-size: 14px;
+    color: #575757;
+}
+.end .end1 .last .lft #copy{
+    font-weight: bold;
+    margin-top: 50px;
+}
+.end .end1 .last .right{
+    padding-top: 50px;
+}
+.end .end1 .last .right i{
+    font-size: 20px;
+    margin-left: 10px;
+}
+@media screen and (max-width:1025px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+    }
+    .navbar{
+        width: 100%;
+        padding: 20px 10px;
+    }
+    .navbar .navbar1{
+        display: none;
+    }
+    .navbar .navbar3{
+        display: none;
+    }
+    .navbar .navbar2{
+        width: 100%;
+        display: block;
+        height: 8vh;
+        background-color: #191919;
+        border-bottom: 2px solid #323232;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navbar .navbar2 .left{
+        width: 100%;
+        color: white;
+        display: flex;
+        align-items: center;
+    }
+    .navbar .navbar2 .left i{
+        font-size: 15px;
+    }
+    .navbar .navbar2 .logo{
+        color: white;
+        font-size: 25px;
+        margin-left: 20px;
+    }
+    .navbar .navbar2 i{
+        color: #b5b5b5;
+        font-size: 15px;
+    }
+    .ban{
+        padding: 120px 10px;
+        height: auto;
+        width: 100%;
+    }
+    .ban .top .rgt{
+        display: none;
+    }
+    .ban .top{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .ban .top .lft{
+        padding-top: 30px;
+        background-image: url(../IMAGES/image-product-test2-removebg-removebg-preview.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        color: white;
+        width: 100%;
+        height: 40vh;
+    }
+    .ban .top .lft h1{
+        font-size: 40px;
+    }
+    .ban .top .lft p{
+        font-size: 14px;
+    }
+    .but{
+        width: 100%;
+        background-color: white;
+        padding: 20px 10px;
+    }
+    .but .nxt{
+        width: 100%;
+        padding: 0px 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 5px;
+    }
+    .but .nxt .icon{
+        background-color: #f1f1f1;
+        height: 20vh;
+        text-align: center;
+    }
+    /* .but .nxt .icon img{
+        position: relative;
+        top: 0;
+        left: 0; 
+    } */
+    .but .nxt .icon h3{
+        position: relative;
+        top: -100;
+        left: 0;
+        margin-top: 20px;
+    }
+    .but .nxt .icon span{
+        position: relative;
+        top: -100px;
+        left: 0;
+    }
+    .but .orange{
+        width: 100%;
+        margin-top: 100px;
+        background-color: #d87c49;
+        height: auto;
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .but .orange .spk{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .but .orange .spk img{
+        margin-top: 20px;
+        height: 400px;
+    }
+    .but .orange .ig{
+        text-align: center;
+    }
+    .but .orange .ig h1{
+        margin-top: 5px;
+    }
+    .but .orange .ig button{
+        margin: 20px 0px 40px 0px;
+    }
+    .but .gray{
+        margin: 30px 0px;
+        height: 30vh;
+        background-color: #e8e8e8;
+        background-image: url(../IMAGES/image-speaker-zx7-removebg-preview-removebg-preview.png);
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    .but .gray h1{
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin-top: 10px;
+        margin-left: 100px;
+    }
+    .but .gray button{
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin-top: 120px;
+        margin-left: 100px;
+    }
+    .but .earphones{
+        grid-column-gap: 5px;
+        width: 100%;
+    }
+    .but .earphones .pic{
+        background-size: cover;
+        height: 30vh;
+    }
+    .but .earphones .label{
+        height: 30vh;
+    }
+    .but .earphones .label h1{
+        /* position: relative;
+        top: 150px;
+        left: 50px; */
+        margin-left: 50px;
+        margin-top: 150px;
+    }
+    .but .earphones .label button{
+        top: 0px;
+        left: 0px;
+        margin-left: 50px;
+    }
+    .but .profile{
+        grid-template-columns: 1fr;
+    }
+    .but .profile .essay{
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0px 90px;
+    }
+    .but .profile .essay h1{
+        font-size: 30px;
+    }
+    .but .profile .essay p{
+        font-size: 22px;
+    }
+    .but .profile .person{
+        grid-row: 1;
+        grid-column: 1;
+        height: 30vh;
+    }
+    .end {
+        margin-top: 50px;
+        background-color: #101010;
+        color: white;
+        width: 100%;
+    }
+    .end .end1{
+        display: none;
+    }
+    .end .end3{
+        display: none;
+    }
+    .end .end2{
+        display: block;
+        padding: 20px 30px;
+    }
+    .end .end2 .bar{
+        height: 10vh;
+    }
+    .end .end2 .bar .logo{
+        color: white;
+        font-size: 25px;
+    }
+    .end .end2 .bar ul{
+        display: flex;
+        margin-top: 30px;
+    }
+    .end .end2 .bar ul li{
+        list-style: none;
+        margin-right: 20px;
+    }
+    .end .end2 .bar ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 13px;
+    }
+    .end .end2 .last{
+        height: 30vh;
+        margin-top: 10px;
+    }
+    .end .end2 .last .lft{
+        width: 100%;
+    }
+    .end .end2 .last .lft p{
+        font-size: 14px;
+        color: #575757;
+    }
+    .end .end2 .last .lft #copy{
+        font-weight: bold;
+    }
+    .end .end2 .last .right{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .end .end2 .last .right #copy{
+        font-weight: bold;
+        color: #575757;
+    }
+    .end .end2 .last .right .i i{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width:468px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .navbar{
+        width: 100%;
+        padding: 20px 10px;
+    }
+    .navbar .navbar2{
+        display: none;
+    }
+    .navbar .navbar1{
+        display: none;
+    }
+    .navbar .navbar3{
+        height: 8vh;
+        background-color: #191919;
+        border-bottom: 2px solid #323232;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navbar .navbar3 i{
+        font-size: 15px;
+        color: white;
+    }
+    .navbar .navbar3 .logo{
+        color: white;
+        font-size: 25px;
+    }
+    .ban{
+        height: auto;
+    }
+    .ban .top .lft h1{
+        font-size: 21px;
+    }
+    .ban .top .lft{
+        padding-top: 20px;
+        height: 50vh;
+    }
+    .but .nxt .icon{
+        background-color: #f1f1f1;
+        height: 30vh;
+        text-align: center;
+    }
+    .but .nxt{
+        grid-template-columns: 1fr;
+        grid-row-gap: 140px;
+    }
+    .but .gray{
+        margin: 30px 0px;
+        height: 30vh;
+        background-color: #e8e8e8;
+        background-image: url(../IMAGES/cropped\ image-speaker-zx7-removebg-preview-removebg-preview.png);
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    .but .gray h1{
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin-top: 110px;
+        margin-left: 25px;
+    }
+    .but .gray button{
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin-top: 120px;
+        margin-left: 25px;
+    }
+    .but .earphones{
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    }
+    .but .earphones .pic{
+        height: 30vh;
+    }
+    .but .earphones .label{
+        height: 30vh;
+    }
+    .but .earphones .label h1{
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin-top: 100px;
+        margin-left: 35px;
+    }
+    .but .earphones .label button{
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin-top: 50px;
+        margin-left: 35px;
+    }
+    .but .profile{
+        grid-row-gap: 10px;
+        margin-top: 100px;
+    }
+    .but .profile .essay{
+        grid-row: 2;
+        padding: 0px 10px;
+    }
+    .but .profile .essay h1{
+        font-size: 30px;
+    }
+    .but .profile .essay p{
+        font-size: 15px;
+    }
+    .but .profile .person{
+        grid-row: 1;
+    }
+    .end .end1{
+        display: none;
+    }
+    .end .end2{
+        display: none;
+    }
+    .end .end3{
+        display: block;
+        height: auto;
+        padding: 50px 20px;
+    }
+    .end .end3 .bar{
+        height: auto;
+        text-align: center;
+    }
+    .end .end3 .bar .logo{
+        color: white;
+        font-size: 25px;
+    }
+    .end .end3 .bar ul{
+        margin-top: 30px;
+    }
+    .end .end3 .bar ul li{
+        list-style: none;
+        margin-bottom: 20px;
+    }
+    .end .end3 .bar ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 13px;
+    }
+    .end .end3 .last{
+        height: 30vh;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .end .end3 .last .lft{
+        width: 100%;
+    }
+    .end .end3 .last .lft p{
+        font-size: 14px;
+        color: #575757;
+    }
+    .end .end3 .last .right{
+        margin-top: 50px;
+    }
+    .end .end3 .last .right #copy{
+        font-weight: bold;
+        color: #575757;
+    }
+    .end .end3 .last .right .i{
+        margin-top: 40px;
+    }
+    .end .end3 .last .right .i i{
+        font-size: 20px;
+        margin-left: 10px;
+    }
+}
